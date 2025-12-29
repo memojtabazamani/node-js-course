@@ -1,15 +1,8 @@
-import standardConfig from 'eslint-config-standard-kit'
+import js from "@eslint/js";
+import globals from "globals";
+import { defineConfig } from "eslint/config";
 
-export default [
-    ...standardConfig({
-        prettier: true,
-        sortImports: true,
-        jsx: true,
-        node: false,
-        react: true,
-        typescript: true
-    }),
-    {
-        // Add your own settings here
-    }
-]
+export default defineConfig([
+  { files: ["**/*.{js,mjs,cjs}"], plugins: { js }, extends: ["js/recommended"], languageOptions: { globals: globals.browser } },
+  { files: ["**/*.js"], languageOptions: { sourceType: "commonjs" } },
+]);
