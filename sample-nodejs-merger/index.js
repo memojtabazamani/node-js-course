@@ -1,1 +1,2 @@
-console.log('Running with Nodemon...')
+var x = 2
+console.log(x)
