@@ -1,17 +1,37 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+
 app.use(express.json());
+
 const users = [
   {
     name: "John",
     age: 20,
   },
 ];
+const myLogger = function (req, res, next) {
+  console.log("Logged");
+  next();
+};
+
+const handleUser = function (req, res, next) {
+  // Process
+  // Authentication
+  req.user = "Ehsan";
+  next();
+};
+
+// ** Below code must be use before routings **
+app.use(myLogger);
+// app.use(handleUser);
+
 // READ
-app.get("/", (req, res) => {
-  console.log("GET Request Successfull!");
-  res.send(users);
+app.get("/", handleUser, (req, res) => {
+  res.json({
+    users: users,
+    userName: req.user,
+  });
 });
 // READ USERS
 app.get("/user", (req, res) => {
