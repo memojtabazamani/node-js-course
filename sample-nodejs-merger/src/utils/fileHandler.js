@@ -1,6 +1,17 @@
 const Papa = require('papaparse')
 const fs = require('fs')
-
+const generateCSV = async (data) => {
+    const csv = Papa.unparse({
+        fields: ['SKU', 'Description'],
+        data: data.map((product) => {
+            return {
+                SKU: product.SKU,
+                Description: product.Description,
+            }
+        }),
+    })
+    await fs.writeFileSync('./output/result.csv', csv)
+}
 const readSourcesNames = (filesNames) => {
     const catalogNames = filesNames.filter((fileName) => {
         return fileName.startsWith('catalog')
@@ -29,4 +40,5 @@ module.exports = {
     readCSV,
     readDirectory,
     readSourcesNames,
+    generateCSV,
 }
