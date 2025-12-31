@@ -1,5 +1,11 @@
 const homeController = (req, res) => {
-    res.send('HOME PAGE FROM CONTROLLER')
+    res.send(
+        `
+        <div>
+        <h1> Image </h1>
+        <img src='/assets/img/img.webp' width='10%' />
+        </div>`
+    )
 }
 
 module.exports = homeController
