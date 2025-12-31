@@ -12,15 +12,15 @@ APP.set('view engine', 'ejs')
 
 // 404 handler
 APP.use((req, res) => {
-    res.status(404).send('Not Found')
+  res.status(404).send('Not Found')
 })
 
 // Error handler
 APP.use((err, req, res, next) => {
-    console.error(err.stack)
-    res.status(500).send('Something broke!')
+  console.error(err.stack)
+  res.status(500).send('Something broke!')
 })
 
 APP.listen(PORT, () => {
-    console.log(`App is running on ${PORT}`)
+  console.log(`App is running on ${PORT}`)
 })
