@@ -7,7 +7,8 @@ APP.use(express.static('public'))
 APP.use(router)
 APP.use(morgan('dev'))
 
-APP.set('view engine', 'pug')
+// APP.set('view engine', 'pug')
+APP.set('view engine', 'ejs')
 
 // 404 handler
 APP.use((req, res) => {

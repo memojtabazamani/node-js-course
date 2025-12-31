@@ -1,5 +1,7 @@
 const aboutController = (req, res) => {
-    res.send('ABOUTE PAGE FROM CONTROLLER')
+    res.render('about', {
+        title: 'About Page',
+    })
 }
 
 module.exports = aboutController
