@@ -1,11 +1,9 @@
 const homeController = (req, res) => {
-    res.send(
-        `
-        <div>
-        <h1> Image </h1>
-        <img src='/assets/img/img.webp' width='10%' />
-        </div>`
-    )
+    res.render('index', {
+        title: 'Hey Mojtaba',
+        message: 'Hello there!!',
+        imgSrc: 'assets/img/img.webp',
+    })
 }
 
 module.exports = homeController

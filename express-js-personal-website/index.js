@@ -6,6 +6,9 @@ const morgan = require('morgan')
 APP.use(express.static('public'))
 APP.use(router)
 APP.use(morgan('dev'))
+
+APP.set('view engine', 'pug')
+
 // 404 handler
 APP.use((req, res) => {
     res.status(404).send('Not Found')
