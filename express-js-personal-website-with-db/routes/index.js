@@ -3,9 +3,11 @@ const router = express.Router()
 const homepageController = require('../controllers/homepageController')
 const aboutController = require('../controllers/aboutController')
 const contactController = require('../controllers/contactController')
-
+const postController = require('../controllers/postController')
+const categoryController = require('../controllers/categoryController')
 router.get('/', homepageController)
 router.get('/about', aboutController)
 router.get('/contact', contactController)
-
+router.get('/category/:id', categoryController)
+router.get('/post/:id', postController)
 module.exports = router

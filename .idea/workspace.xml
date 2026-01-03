@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="691b2327-3d39-4106-bc46-5b12e7f8180e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/express-js-personal-website-with-db/configs/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/express-js-personal-website-with-db/configs/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/express-js-personal-website-with-db/models/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/express-js-personal-website-with-db/models/Category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/express-js-personal-website-with-db/controllers/categoryController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/express-js-personal-website-with-db/controllers/postController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/express-js-personal-website-with-db/views/layout/sidebar.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/express-js-personal-website-with-db/views/post.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/express-js-personal-website-with-db/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/express-js-personal-website-with-db/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/express-js-personal-website-with-db/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/express-js-personal-website-with-db/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/express-js-personal-website-with-db/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/express-js-personal-website-with-db/views/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/express-js-personal-website-with-db/views/layout/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/express-js-personal-website-with-db/views/layout/header.ejs" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileEditorManager">
     <leaf>
@@ -21,9 +33,28 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "memojtabazamani"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/memojtabazamani/node-js-course.git",
+    "accountId": "b5f51e88-ad2c-4128-adf3-9e0e6fad2d83"
+  }
+}]]></component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
@@ -33,10 +64,19 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
   <component name="ProjectFrameBounds">
     <option name="x" value="833" />
     <option name="width" value="854" />
     <option name="height" value="1017" />
+  </component>
+  <component name="ProjectId" id="37kpgV2NgqNy0hb2bPooSS0ou1Y" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -47,20 +87,35 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\laragon\\www\\node-js-course\\sample-nodejs-merger\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\node-js-course\express-js-personal-website-with-db\views\layout" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-PS-252.23892.419" />
+        <option value="bundled-php-predefined-a98d8de5180a-c72577f2c82f-com.jetbrains.php.sharedIndexes-PS-252.23892.419" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,6 +125,7 @@
       <option name="presentableId" value="Default" />
       <updated>1767295558246</updated>
       <workItem from="1767295566549" duration="14000" />
+      <workItem from="1767457040029" duration="2804000" />
     </task>
     <servers />
   </component>
@@ -98,6 +154,9 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/express-js-personal-website-with-db/utils/ImportToDatabase.js">
