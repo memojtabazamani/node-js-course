@@ -5,9 +5,18 @@ const aboutController = require('../controllers/aboutController')
 const contactController = require('../controllers/contactController')
 const postController = require('../controllers/postController')
 const categoryController = require('../controllers/categoryController')
+const searchController = require('../controllers/searchController')
+const loginController = require('../controllers/loginController')
+const signupController = require('../controllers/signupController')
+
 router.get('/', homepageController)
 router.get('/about', aboutController)
 router.get('/contact', contactController)
 router.get('/category/:id', categoryController)
 router.get('/post/:id', postController)
+router.get('/search', searchController)
+router.get('/login', loginController)
+router.get('/signup', signupController)
+router.post('/signup', signupController)
+
 module.exports = router
