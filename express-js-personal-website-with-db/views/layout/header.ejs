@@ -14,7 +14,7 @@
 <div class="nav-scroller py-1 mb-2">
     <nav class="nav d-flex justify-content-between">
         <% categories.forEach(function(category, index){ %>
-            <a class="p-2 text-muted <% if(index === activeId-1) { %> active <% } %>" href="/category/<%=index+1%>"><%= category %></a>
+            <a class="p-2 text-muted <% if(index === activeCategotyId - 1) { %> active <% } %>" href="/category/<%=index+1%>"><%= category %></a>
         <% }); %>
     </nav>
 </div>
