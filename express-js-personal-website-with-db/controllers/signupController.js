@@ -1,5 +1,20 @@
-const signupController = (req, res) => {
+User = require('../models/User')
+const get = (req, res) => {
   res.render('signup')
 }
 
-module.exports = signupController
+const post = async (req, res) => {
+  console.log('req', req.body)
+  await User.create({
+    name: req.body.name,
+    email: req.body.email,
+    password: req.body.password,
+    age: 0,
+  })
+  res.render('signup')
+}
+
+module.exports = {
+  get,
+  post,
+}
