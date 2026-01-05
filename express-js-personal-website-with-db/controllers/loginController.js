@@ -1,11 +1,14 @@
 const passport = require('passport')
 const get = (req, res) => {
-  res.render('login')
+  const flash = req.flash()
+  res.render('login', {
+    flash,
+  })
 }
 const post = passport.authenticate('local', {
   successRedirect: '/',
   failureRedirect: '/login?failed=true',
-  failureFlash: false,
+  failureFlash: true,
   session: false,
 })
 

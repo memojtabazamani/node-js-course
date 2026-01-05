@@ -11,9 +11,14 @@
         <div class="container">
             <form action="/signup" method="POST" class="form-signin" >
                 <a class="blog-header-logo text-dark" href="/">Ehsan Gazar Blog</a>
-                <br />
-                <br />
-                <br />
+                <% for (const key in flash) { %>
+                <% flash[key].forEach(msg => { %>
+                    <div class="alert alert-<%=key === 'error' ? 'danger' : key%>" role="alert">
+                    <%= msg %>
+                    </div>
+                <% }) %>
+                <% } %>
+                <hr>
                 <label for="inputName" class="sr-only">Name</label>
                 <input name="name" type="text" id="inputName" class="form-control" placeholder="Name" required=""
                     autofocus="" autocomplete="off"

@@ -12,10 +12,17 @@
         <div class="container">
             <form class="form-login" action="/login" method="POST">
                 <a class="blog-header-logo text-dark" href="/">Ehsan Gazar Blog</a>
-                <br />
-                <br />
-                <br />
+                <% for (const key in flash) { %>
+                <% flash[key].forEach(msg => { %>
+                    <div class="alert alert-<%=key === 'error' ? 'danger' : key%>" role="alert">
+                    <%= msg %>
+                    </div>
+                <% }) %>
+                <% } %>
+                <hr>
+                
                 <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+
                 <label for="inputEmail" class="sr-only">Email address</label>
                 <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus=""
                     autocomplete="off"

@@ -1,6 +1,7 @@
 User = require('../models/User')
 const get = (req, res) => {
-  res.render('signup')
+  const flash = req.flash()
+  res.render('signup', { flash })
 }
 
 const post = async (req, res) => {
